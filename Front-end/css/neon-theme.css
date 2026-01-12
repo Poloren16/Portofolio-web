@@ -1,0 +1,63 @@
+:root {
+  --bg-dark: #0b0f2a;
+  --neon-blue: #00e5ff;
+  --neon-purple: #7b2cff;
+  --text-light: #eaeaff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1a1f4b, var(--bg-dark));
+  color: var(--text-light);
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10%;
+  gap: 60px;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow:
+    0 0 25px rgba(123, 44, 255, 0.4),
+    0 0 45px rgba(0, 229, 255, 0.2);
+}
+
+.hero img {
+  width: 260px;
+  border-radius: 20px;
+  box-shadow:
+    0 0 20px var(--neon-blue),
+    0 0 40px var(--neon-purple);
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  color: var(--neon-blue);
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  color: var(--neon-purple);
+}
+
+.hero p {
+  max-width: 480px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
