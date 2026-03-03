@@ -13,13 +13,39 @@
 }
 
 body {
-  background: radial-gradient(circle at top, #1a1f4b, var(--bg-dark));
+  background-color: var(--bg-dark);
   color: var(--text-light);
   min-height: 100vh;
+  position: relative;
+}
+
+/* VIDEO BACKGROUND & OVERLAY */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(11, 15, 42, 0.4);
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* HERO */
 .hero {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
