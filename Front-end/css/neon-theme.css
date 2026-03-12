@@ -56,8 +56,9 @@ body {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(0, 229, 255, 0.4); /* Neon blue stroke */
-  box-shadow: 
+  border-bottom: 1px solid rgba(0, 229, 255, 0.4);
+  /* Neon blue stroke */
+  box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.5),
     0 4px 15px rgba(0, 229, 255, 0.2);
 }
@@ -76,7 +77,8 @@ body {
   display: block;
   width: 25px;
   height: 4px;
-  background-color: #3f51b5; /* mimicking the blue line from the image */
+  background-color: #3f51b5;
+  /* mimicking the blue line from the image */
   margin-top: 6px;
   border-radius: 2px;
 }
@@ -87,7 +89,8 @@ body {
 }
 
 .navbar a {
-  color: #a0a4b8; /* grayish color matching the image */
+  color: #a0a4b8;
+  /* grayish color matching the image */
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -149,16 +152,19 @@ body {
     stroke: rgba(255, 255, 255, 0);
     filter: drop-shadow(0 0 0px #00e5ff);
   }
+
   20% {
     stroke-dashoffset: 0;
     stroke: #ffffff;
     filter: drop-shadow(0 0 5px #00e5ff) drop-shadow(0 0 10px #00e5ff);
   }
+
   60% {
     stroke-dashoffset: 0;
     stroke: #ffffff;
     filter: drop-shadow(0 0 5px #00e5ff) drop-shadow(0 0 10px #00e5ff);
   }
+
   100% {
     stroke-dashoffset: -600;
     stroke: rgba(255, 255, 255, 0);
@@ -256,7 +262,8 @@ body {
 
 .about-card {
   flex: 1.5;
-  background: rgba(255, 255, 255, 0.05); /* clear blur */
+  background: rgba(255, 255, 255, 0.05);
+  /* clear blur */
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-radius: 20px;
@@ -303,7 +310,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .about-image {
@@ -340,7 +347,8 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: transparent; /* Use the video background from main site */
+  background: transparent;
+  /* Use the video background from main site */
 }
 
 .skills .section-title {
@@ -384,23 +392,30 @@ body {
 }
 
 /* Entry / Exit Animations (Pop up and Pop down) */
-.animate-skill-target, .animate-skill-card {
+.animate-skill-target,
+.animate-skill-card {
   opacity: 0;
   transform: scale(0.4) translateY(60px);
   transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.animate-skill-target.show, .animate-skill-card.show {
+.animate-skill-target.show,
+.animate-skill-card.show {
   opacity: 1;
   transform: scale(1) translateY(0);
 }
 
 /* Responsive adjustments for skills grid */
 @media (max-width: 1000px) {
-  .skills-grid { grid-template-columns: repeat(4, 1fr); }
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
+
 @media (max-width: 600px) {
-  .skills-grid { grid-template-columns: repeat(3, 1fr); }
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* PROJECT SECTION */
@@ -509,7 +524,8 @@ body {
   border: 1px solid #fff;
   color: #fff;
   background: transparent;
-  border-radius: 6px; /* Matches slightly rounded outline in reference */
+  border-radius: 6px;
+  /* Matches slightly rounded outline in reference */
   text-decoration: none;
   font-size: 0.95rem;
   transition: all 0.3s ease;
@@ -523,21 +539,28 @@ body {
 }
 
 /* Pop up / Pop down Animations */
-.animate-project-target, .animate-project-card {
+.animate-project-target,
+.animate-project-card {
   opacity: 0;
   transform: scale(0.4) translateY(60px);
   transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.animate-project-target.show, .animate-project-card.show {
+.animate-project-target.show,
+.animate-project-card.show {
   opacity: 1;
   transform: scale(1) translateY(0);
 }
 
 /* Responsive */
 @media (max-width: 950px) {
-  .project-grid { grid-template-columns: repeat(2, 1fr); }
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 @media (max-width: 650px) {
-  .project-grid { grid-template-columns: 1fr; }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
